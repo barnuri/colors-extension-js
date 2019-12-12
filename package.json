@@ -1,0 +1,16 @@
+{
+    "name": "colors-extension",
+    "version": "1.0.18",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "upload": "rimraf dist && tsc && npm run copyFiles && npm version patch && cd ./dist && npm publish",
+        "copyFiles": "copyfiles package.json dist/package.json dist -f && copyfiles Readme.md dist/Readme.md dist -f"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "copyfiles": "^2.1.1",
+        "rimraf": "^3.0.0"
+    }
+}
