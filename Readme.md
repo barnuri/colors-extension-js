@@ -2,6 +2,9 @@
 ```bash
 npm i colors
 ```
+
+![Example](ex.png)
+
 # Use
 
 ```js

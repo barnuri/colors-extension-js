@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "upload": "rimraf dist && tsc && npm run copyFiles && npm version patch && cd ./dist && npm publish",
-        "copyFiles": "copyfiles package.json dist/package.json dist -f && copyfiles Readme.md dist/Readme.md dist -f"
+        "copyFiles": "copyfiles package.json dist/package.json dist -f && copyfiles Readme.md dist/Readme.md dist -f && copyfiles ex.png dist/ex.png dist -f"
     },
     "author": "",
     "license": "ISC",
