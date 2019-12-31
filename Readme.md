@@ -3,7 +3,7 @@
 npm package for use colors in console
 
 ```bash
-npm i colors
+npm i colors-ext
 ```
 
 ![Example](https://raw.githubusercontent.com/barnuri/colors-extension-js/master/ex.png)
@@ -11,7 +11,7 @@ npm i colors
 # Use
 
 ```js
-import 'colors-extension'; // es6
+import 'colors-ext'; // es6
 // require('colors-extension')
 
 // console.log('text'.colorByNumber(30)) equals, 30 = black in ansi colors
