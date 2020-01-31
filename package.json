@@ -11,7 +11,7 @@
     },
     "scripts": {
         "prepublish": "rimraf dist && tsc",
-        "postpublish": "npm version patch"
+        "postpublish": "npm version patch && git push"
     },
     "license": "ISC",
     "devDependencies": {
