@@ -1,14 +1,18 @@
 {
     "name": "colors-ext",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
-    "main": "index.js",
-    "readme": "Readme.md",
-    "scripts": {
-        "upload": "rimraf dist && tsc && npm run copyFiles && cd ./dist && npm publish && npm version patch",
-        "copyFiles": "copyfiles package.json dist/package.json dist -f && copyfiles Readme.md dist/Readme.md dist -f && copyfiles ex.png dist/ex.png dist -f"
+    "main": "./dist/index.js",
+    "author": "Bar Nuri",
+    "homepage": "https://github.com/barnuri/colors-extension-js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/barnuri/colors-extension-js"
     },
-    "author": "",
+    "scripts": {
+        "prepublish": "rimraf dist && tsc",
+        "postpublish": "npm version patch"
+    },
     "license": "ISC",
     "devDependencies": {
         "copyfiles": "^2.1.1",
